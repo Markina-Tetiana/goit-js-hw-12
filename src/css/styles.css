@@ -36,7 +36,8 @@
   border: 1px solid #4e75ff;
   outline: none;
 }
-.search-btn {
+.search-btn,
+.load-more-btn {
   width: 91px;
   height: 40px;
   border-radius: 8px;
@@ -50,11 +51,13 @@
   letter-spacing: 0.04em;
   color: #fff;
 }
-.search-btn:hover {
+.search-btn:hover,
+.load-more-btn:hover {
   background-color: #6c8cff;
 }
 .loader {
   display: none;
+  margin: 10px auto;
   transform: rotateZ(45deg);
   perspective: 1000px;
   border-radius: 50%;
@@ -145,4 +148,15 @@
 .gallery__info {
   display: flex;
   text-align: center;
+}
+.load-more-btn {
+  display: block;
+  width: 125px;
+  margin: 32px auto 10px;
+}
+.load-more-btn.is-hidden {
+  display: none;
+}
+.loader-bottom {
+  margin: 10px auto;
 }
